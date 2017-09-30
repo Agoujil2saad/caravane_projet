@@ -79,8 +79,8 @@ a:focus {
 	padding: 2em 1em 4em;
 	text-align: center;
 	color: #fff;
-	background: #181922 url(../img/related/caravane.png) no-repeat center center;
-	background-size: cover;
+	background: #181922 url(../img/related/caravane.png) no-repeat  center center ;
+	background-size: auto 100%;
 }
 
 .codrops-header::before {
