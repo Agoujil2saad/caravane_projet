@@ -65,7 +65,7 @@ a:focus {
 
 .codrops-header {
 	position: relative;
-	z-index: 1000;
+	z-index: 500;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-direction: column;
@@ -136,7 +136,7 @@ a:focus {
 	font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
 	font-size: 2em;
 	position: relative;
-	z-index: 1000;
+	z-index: 500;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-direction: column;
@@ -145,13 +145,13 @@ a:focus {
 	justify-content: center;
 	-webkit-align-items: center;
 	align-items: center;
-	height: 100vh;
 	margin: 0 0 3em;
 	padding: 3em;
 	text-align: center;
 	color: #fff;
 	background: #181922;
 }
+
 
 .intro blockquote {
 	max-width: 800px;
@@ -166,6 +166,14 @@ a:focus {
 	display: block;
 	padding: 1em 0;
 	color: #464b4b;
+}
+
+
+
+.intro .present{
+	text-align:left;
+	color:  #FFD034;
+	line-height:1.3em;
 }
 
 
@@ -294,7 +302,7 @@ a:focus {
 
 .text {
 	position: relative;
-	z-index: 1000;
+	z-index: 500;
 	padding: 5em 3em;
 }
 
