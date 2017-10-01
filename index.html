@@ -22,6 +22,14 @@
 </head>
 
 <body>
+<!-- go to top button -->
+<a href="javascript:" id="return-to-top">
+  <center>
+  	
+  <i class="fa fa-chevron-up"></i>
+  </center>  
+</a>
+<!-- go to top button -->
 	<div class="main">
 		<div class="menu-wrap">
 			<nav class="menu">
@@ -32,6 +40,7 @@
 					<a href="/#context"><i class="fa fa-fw fa-envelope-o"></i><span>Contexte de La Caravane</span></a>
 					<a href="/#video"><i class="fa fa-fw fa-film"></i><span>Film</span></a>
 					<a href="/#annexe"><i class="fa fa-fw fa-comment-o"></i><span>Annexes</span></a>
+					<a href="/#partners"><i class="fa fa-fw fa-handshake-o"></i><span>Partenaires</span></a>
 				</div>
 			</nav>
 			<button class="close-button" id="close-button">Close Menu</button>
@@ -56,7 +65,9 @@
 					<em>“Pour la première fois au monde une caravane  parcourra 17 pays Africains.<br>
 					La Caravane du Dialogue Interculturel et de la Libre circulation des biens et des personnes  est une expédition transversale qui marque notre engagement et notre militantisme en faveur d’une véritable liberté économique, Culturelle, Sociale et Identitaire.”</em><span> PRÉSIDENT MR. KHALID BOUDALI</span>
 				</blockquote>
-				<span class="header-title__main" id="avant_propos">Avant - Propos</span>
+
+
+				<span class="header-title__main" id="avant_propos" style="color: white">Avant - Propos</span>
 				<div class="present">
 					<i>
 						A l’aube de ce Millénaire naissant, des transformations notables s’opèrent dans les comportements des individus qui gagnent un peu plus en humanisme. Il y a quelques années cet élan de pensée était inacceptable. Ce qui entraîne des mutations profondes dans l'architecture internationale des relations entre États qui sont obligées de s'adapter aux réalités actuelles. <br>
@@ -64,9 +75,9 @@
 						C’est la raison pour laquelle l’Association Clé pour la Solidarité et le Dé développement Africain a décidé de sortir de l’inaction en organisant l’Ier Forum du Dialogue et de l’Investissement africain. L'Appel de Meknès est une réponse à l’initiative de Sa Majesté le Roi Mohamed VI dans sa vision de consolider les liens fraternels et de redonner sa dignité au continent africain afin de promouvoir le lobbying africain.	
 					</i>
 				</div>
-				<span class="header-title__main" id="context">Contexte</span>
+				<span class="header-title__main" id="context" style="color: white">Contexte</span>
 				<div class="present">
-					En ce 21 ème siècle, les populations du continent africain ont si peu de ressources qu’elles ne peuvent couvrir leurs besoins élémentaires. On associe souvent la pauvreté aux pays en développement, où la malnutrition, la faim et le manque d’eau potable sont souvent des défis quotidiens. Aujourd'hui, c'est la dimension Économique qui prévaut et constitue l’un des fondamentaux des relations diplomatiques d'où la naissance de nouveaux concepts tels que la Coopération SUD/SUD en rupture avec la traditionnelle Coopération NORD/SUD.
+					En ce 21 ème siècle, les populations du continent africain ont si peu de ressources qu’elles ne peuvent couvrir leurs besoins élémentaires. On associe souvent la pauvreté aux pays en développement, où la malnutrition, la faim et le manque d’eau potable sont souvent des défis quotidiens. Aujourd'hui, c'est la dimension Économique qui prévaut et constitue l’un des fondamentaux des relations diplomatiques d'où la naissance de nouveaux concepts tels que la Coopération SUD/SUD en rupture avec la traditionnelle Coopération NORD/SUD.
 					L’Afrique doit se libérer de ses torpeurs et triompher de l’AFROPESSIMISME grâce à l’affranchissement de l'élite intellectuelle, des potentiels physiques et de toutes les forces vives des peuples africains. Le développement du continent africain exige que la créativité et le dynamisme du secteur privé se concentrent sur des domaines porteurs comme l'AGRICULTURE, la RECHERCHE SCIENTIFIQUE, la TECHNOLOGIE et le DEVELOPPEMENT DES INFRASTRUCTURES.
 					<span class="header-title__part" style="padding: 0;"><b style="color:  #FF4C3B">
 					LA CULTURE</b></span> 
@@ -491,9 +502,12 @@
 				<!--  -->
 				<center>
 					<div style="padding: 30px 0;font-size: 1.3em;" >Si vous souhaitez en savoir plus, merci de visiter notre site Internet : <a href="jesuisafrica.org">www.jesuisafrica.org</a></div>
+					<span class="header-title__main" id="avant_propos">Partenaires</span>
+					<div class="partners" id="partners">
+						<a href="" style="font-size: 1.3em; padding:2em;"><i class="fa fa-lg fa-handshake-o"></i><span>Devenir Partenaires</span></a>
+					</div>
 					<div style="padding-top: 100px; " >Copyright © 2017 - Association Internationale Clé De la Paix</div>
 				</center>
-
 			</section>
 		</div>
 	</div>
@@ -504,7 +518,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.5/jquery.lazy.min.js"></script>
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.5/jquery.lazy.plugins.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
 	<script type="text/javascript">
 		(function( $ ) { "use strict";   
 			$(function() {
@@ -525,6 +538,23 @@
 
 		$(function($) {
 			$("img.lazy").Lazy();
+		});
+		// ===== Scroll to Top ====
+
+		$(window).scroll(function() {
+		if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+			$('#return-to-top').fadeIn(200);    // Fade in the arrow
+		}
+		else {
+			$('#return-to-top').fadeOut(200);   // Else fade out the arrow
+		}
+			});
+
+		$('#return-to-top').click(function() 
+		{      // When arrow is clicked
+			$('body,html').animate({
+				scrollTop : 0                       // Scroll to top of body
+			}, 1000);
 		});
 	</script>
 
